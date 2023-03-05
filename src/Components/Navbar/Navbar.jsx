@@ -18,58 +18,89 @@ const Navbar = () => {
             <img src={Logo} alt="logo" />
           </a>
           <div className="md:hidden">
-            {!showNav && <TfiMenu
-              onClick={handleClick}
-              className="text-clr_primary_400 h-[2em] w-[1.5em] cursor-pointer"
-            />}
-            {showNav && <AiOutlineClose
-              onClick={handleClick}
-              className="text-clr_primary_400 h-[2em] w-[1.5em] cursor-pointer"
-            />}
+            {!showNav && (
+              <TfiMenu
+                onClick={handleClick}
+                className="text-clr_primary_400 h-[2em] w-[1.5em] cursor-pointer"
+              />
+            )}
+            {showNav && (
+              <AiOutlineClose
+                onClick={handleClick}
+                className="text-clr_primary_400 h-[2em] w-[1.5em] cursor-pointer"
+              />
+            )}
           </div>
           <nav className="desktop-nav max-[768px]:hidden w-[87%] max-w-[535px] mt-[0.7em]">
-            <ul className="flex justify-between font-semibold desktop-nav-list">
+            <ul className="flex justify-between font-semibold desktop-nav-list text-clr_secondary_800">
               <li>
-                <a className="hover" href="#">Home</a>
+                <a className="hover" href="#">
+                  Home
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Services</a>
+                <a className="hover" href="#">
+                  Services
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Reviews</a>
+                <a className="hover" href="#">
+                  Reviews
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">About Us</a>
+                <a className="hover" href="#">
+                  About Us
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Contact Us</a>
+                <a className="hover" href="#">
+                  Contact Us
+                </a>
               </li>
-              <li className="bg-clr_primary_400 rounded-full py-2 px-4 mt-[-0.5em]">
-                <a className="nav-btn" href="#">Get Started</a>
+              <li className="nav-btn bg-clr_primary_400 rounded-full py-2 px-4 mt-[-0.5em]">
+                <a href="#">
+                  Get Started
+                </a>
               </li>
             </ul>
           </nav>
         </div>
         {showNav && (
           <nav className="mobile-nav md:hidden">
-            <ul className="text-center mobile-nav-list font-semibold">
+            <ul className="text-center mobile-nav-list font-semibold text-clr_secondary_800">
               <li>
-                <a className="hover" href="#">Home</a>
+                <a className="hover" href="#">
+                  Home
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Services</a>
+                <a className="hover" href="#">
+                  Services
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Reviews</a>
+                <a className="hover" href="#">
+                  Reviews
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">About Us</a>
+                <a className="hover" href="#">
+                  About Us
+                </a>
               </li>
               <li>
-                <a className="hover" href="#">Contact Us</a>
+                <a className="hover" href="#">
+                  Contact Us
+                </a>
               </li>
-              <li style={{paddingBottom : "1rem"}}>
-                <a className="bg-clr_primary_400 rounded-full py-2 px-4 nav-btn" href="#">Get Started</a>
+              <li className="nav-btn" style={{ paddingBottom: "1rem" }}>
+                <a
+                  className="bg-clr_primary_400 rounded-full py-2 px-4"
+                  href="#"
+                >
+                  Get Started
+                </a>
               </li>
             </ul>
           </nav>

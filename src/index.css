@@ -8,6 +8,8 @@
         box-sizing: border-box;
     }
 
+    /* Navbar */
+
     .mobile-nav-list li{
         border-bottom: 1px solid #EEEEEE;
         margin-top: 1rem;
@@ -24,5 +26,23 @@
     .nav-btn:hover,
     .nav-btn:focus{
        opacity: 0.7;
+    }
+
+    /* Introduction Part */
+
+    @media (width > 768px ) and (width < 870px){
+        .intro-container{
+            grid-template-columns: 1.3fr 1fr !important;
+        }
+    }
+
+    @media (max-width: 768px){
+        .intro-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
     }
 }
