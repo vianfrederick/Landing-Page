@@ -32,7 +32,7 @@ const Reviews = () => {
 
   return (
     <section className="pt-[5rem] md:mt-16">
-      <div className="container  w-[80%] mx-auto relative">
+      <div className="container  w-[80%] mx-auto relative text-center">
         <h1 className="text-center text-4xl font-bold mb-16 text-clr_secondary_800 mx-auto">What they've have said</h1>
         <Slider ref={slider} className="review-slider-container" {...settings}>
           <div className="slider-element">
@@ -75,17 +75,18 @@ const Reviews = () => {
           </div>
         </Slider>
         <button
-          className="absolute bottom-[137px] left-0"
+          className="absolute top-[205px] left-0 text-clr_primary_400"
           onClick={() => slider?.current?.slickPrev()}
         >
-          <AiOutlineArrowLeft className="text-[1.2rem]" />
+          <AiOutlineArrowLeft className="text-[1.5rem]" />
         </button>
         <button
-          className="absolute bottom-[137px] right-0"
+          className="absolute top-[205px] right-0 text-clr_primary_400"
           onClick={() => slider?.current?.slickNext()}
         >
-          <AiOutlineArrowRight className="text-[1.2rem]" />
+          <AiOutlineArrowRight className="text-[1.5rem]" />
         </button>
+        <button className="mt-[2.8em] nav-btn font-semibold text-clr_secondary_800 bg-clr_primary_400 rounded-full py-2 px-4">Get Started</button>
       </div>
     </section>
   );
