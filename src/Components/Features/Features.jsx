@@ -13,27 +13,27 @@ const Features = () => {
             <VscBell />
             <h2>Alert Messages</h2>
             <p>
-              Never worry about which client have to settle how much. You will
-              be getting notifications here as well as alert messages to your
-              mail two days before due date.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
             </p>
           </div>
           <div>
             <AiFillDashboard />
             <h2>Nice Dashboard</h2>
             <p>
-              As soon as you logged in, you will be encountering a beautiful
-              dashboard which shows your ongoing works, payment pending clients
-              and already paid clients.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
             </p>
           </div>
           <div>
             <AiFillEdit />
             <h2>Update clients</h2>
             <p>
-              If due date have to be changed or newer clients have to be added
-              or you want to remove history, dont worry features have been added
-              for these purposes.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
             </p>
           </div>
           <div>
